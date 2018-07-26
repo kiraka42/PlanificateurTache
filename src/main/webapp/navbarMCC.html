@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default">
+	<div class='container-fluid'>
+		<ul class="nav navbar-nav">
+      <li><a class="navbar-nav" href="home.html">Home</a></li>
+      <li>
+        <a class="navbar-nav">
+          <b>Notifications </b><span class="badge" id="badge"></span>
+        </a>
+      </li>
+      <li><a class="navbar-nav" href="list_tasks_mcc.html">Tasks List</a></li>
+      <li><a class="navbar-nav" href="planesPage.html">Planes List</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a class="navbar-nav" href="credit.html">
+          About us
+        </a>
+        <a class="navbar-nav" href="logout.html">
+          <span class="glyphicon glyphicon-log-out"></span> Logout
+        </a>
+      </li>
+    </ul>
+	</div>
+</nav>
+
+<script type="text/javascript" class="init">
+	$(function(){
+		$.getScript('request.js', function(){
+			getServerData("ws/planned_task/urgentNumber",function(result){
+				$("#badge").text(result);
+			});
+		});
+	});
+</script>

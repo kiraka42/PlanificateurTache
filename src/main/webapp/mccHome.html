@@ -1,0 +1,56 @@
+<script type="text/javascript" class="init">
+	$(document).ready(function() {
+		$('#example').DataTable();
+		$("#navbar").load('navbarMCC.html');
+	});
+</script>
+
+<div class="page-wrapper">
+
+		<!--Banniere-->
+		<section class="intro" id="zen-intro">
+			<header role="banner"></header>
+		</section>
+
+		<!--Navbar-->
+		<div id='navbar'></div>
+		
+		<br><br><p id="warning" style="font-size: 20px; text-align: center;"></p><br><br>
+		
+		<!--formulaire-->
+		<h1>MPD and Flight Planning Importation</h1>
+		
+		<br><br><br>
+		
+		<div style="margin: auto;">
+			<p style="font-size: 20px; text-align: center;">MPD:
+			<input style="display: inline-block;" type="file" name="xlfile" id="mpdFile" onchange="fn(event)">
+			</p>
+			<br>
+		    <p style="font-size: 20px; text-align: center;">Flight Planning:
+		    <input style="display: inline-block;" type="file" name="xlfile" id="planFile" onchange="fn(event)">   
+			</p>
+		</div>	
+		
+
+		<pre id="pre" style="visibility:hidden">
+			<p>Parsed Objects:</p>
+			<table id="task" class="table table-responsive"></table>
+			<table id="flight" class="table table-responsive"></table>
+		</pre>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+		<script type="text/javascript" src="parser.js"></script>
+		<script type="text/javascript" class="init">
+			$(function(){
+				$.getScript('request.js', function(){
+					getServerData("ws/planned_task/urgentNumber",function(result){
+						if(result !== "0")
+							$("#warning").text("Warning: "+result+" tasks should have been scheduled by today.");
+					});
+				});
+			});
+		</script>
+
+</div>
+

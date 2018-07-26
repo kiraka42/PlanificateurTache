@@ -1,0 +1,9 @@
+<script type="text/javascript">
+	localStorage.removeItem("auth");
+	var role=localStorage.getItem('role');;
+	localStorage.removeItem("role");
+	if (role === "mro") {
+  		localStorage.removeItem('mro');
+	}
+	window.location.replace("home.html");
+</script>

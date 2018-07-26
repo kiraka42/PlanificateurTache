@@ -1,0 +1,61 @@
+{
+  "task":{
+    propreties:{
+      task_id                 : { "type" : "long"},
+      periodicity             : { "type" : "long"},
+      airPlaneType            : { "type" : "string"},
+      ATA_category            : { "type" : "string"},
+      duration                : { "type" : "string"},
+      action_list             : { "type" : "array of strings"},
+      pieces_list             : { "type" : "array of strings"},
+      qualifications_required : { "type" : "long"}
+    }
+  },
+  "plane":{
+    propreties:{
+      plane_id                : { "type" : "long"},
+      plane_type              : { "type" : "strng"}
+    }
+  },
+  "airport":{
+    propreties:{
+      airport_id              : { "type" : "long"},
+      name                    : { "type" : "string"},
+      location                : { "type" : "string"}
+    }
+  },
+  "planning_task":{
+    propreties:{
+      planningTaskId          : { "type" : "long"},
+      date                    : { "type" : "date"},
+      executed                : { "type" : "boolean"},
+      taskId                  : { "type" : "long"},
+      planeId                 : { "type" : "long"},
+      Mro                     : { "type" : "long"}
+    }
+  },
+  "mcc":{
+    propreties:{
+      MCC_id                  : { "type" : "long"},
+      last_name               : { "type" : "string"},
+      first_name              : { "type" : "string"},
+      e_mail                  : { "type" : "string"}
+    }
+  },
+  "mcc":{
+    propreties:{
+      MCC_id                  : { "type" : "long"},
+      last_name               : { "type" : "string"},
+      first_name              : { "type" : "string"},
+      e_mail                  : { "type" : "string"}
+    }
+  },
+  "mro":{
+    propreties:{
+      MRO_id                  : { "type" : "long"},
+      airport_id              : { "type" : "long"},
+      mechanic_numbers        : { "type" : "integer"},
+      qualifications          : { "type" : "string"}
+    }
+  }
+}

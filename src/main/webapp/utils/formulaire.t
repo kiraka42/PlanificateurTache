@@ -1,0 +1,2 @@
+<div class='wrapper'> <form class='form-signin'  action='http://localhost:8080/ws/post' method='post'> <h2 class="form-signin-heading">Login</h2><input type='text' class='form-control' name='name' placeholder='Email Address' required='' autofocus='' /><input type='password' class='form-control' name='name2' placeholder='Password' required=''/><label class='checkbox'><input type='checkbox' value='remember-me' id='rememberMe' name='rememberMe'> Remember me</label><button class='btn btn-lg btn-primary btn-block' type='submit'>Login</button></form></div>		
+

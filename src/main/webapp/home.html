@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="utf-8">
+	<title>Flight maintenance - Home</title>
+	<link rel='stylesheet' media='screen' href='css/style.css'>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css"
+		href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css">
+	<style type="text/css" class="init">
+
+	</style>
+
+	<script type="text/javascript" language="javascript"
+		src="//code.jquery.com/jquery-1.12.4.js">
+	</script>
+	<script type="text/javascript" language="javascript"
+		src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js">
+	</script>
+	<script type="text/javascript" language="javascript"
+		src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js">
+	</script>
+	
+	<script type="text/javascript" class="init">
+	$(function(){
+		var role = localStorage.getItem('role');
+		if (role !== null) {
+			if (role === "mro") {
+				$("#includedContent").load("mroHome.html"); 
+			}
+			if (role === "mcc") {
+				$("#includedContent").load("mccHome.html"); 
+			}
+		}
+		else
+			$("#includedContent").load("login.html"); 
+	});
+	</script>
+</head>
+
+<body>
+	<div id="includedContent"></div>
+</body>
+
+</html>

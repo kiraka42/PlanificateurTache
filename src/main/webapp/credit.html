@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+<head>
+    <title>Credits</title>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/credit.css" />
+  
+</head>
+<body>
+<div id="scrollingDiv" style="position: absolute; width: 100%">
+	<div id="centerTitle" class="title"><a href="/" class="title"><h1>Projet Genie Logiciel :</h1><h1>FLIGHT MAINTENANCE
+PLANNING</h1></a></div>
+    <div id="underTitle" style="display:none">
+        <h4>Last version</h4>
+        <br /><br />
+        <ul>
+            <li><a href="/" class="menu"><span class="bracket"> [ </span>Go Back<span class="bracket"> ] </span></a></li>
+        </ul>
+    </div>
+    <div id="runners"><img id="plane1" src="css/plane3.png" alt=""><img id="plane2" src="css/plane.png" alt=""><img id="plane1" src="css/plane3.png" alt=""></div>
+<script>
+	var runners = document.getElementById("runners");
+	runners.style.left = '5000px';
+	runners.style.bottom = (Math.floor(Math.random() * 400)).toString()+'px';
+	var animate2;
+	moveLeft();
+
+	function moveLeft(){
+		if (parseInt(runners.style.left) >= -parseInt(runners.offsetWidth) )
+		{
+			runners.style.left = parseInt(runners.style.left) - 2 + 'px';
+			animate2 = setTimeout(function(){moveLeft();}, 0);
+		}
+		else{
+			//stop();
+			runners.style.left = '5000px';
+			runners.style.bottom = (Math.floor(Math.random() * 500)).toString()+'px';
+			moveLeft();
+		}
+	}
+
+	function stop(){
+		clearTimeout(animate2);
+		runners.style.left = '5000px';
+		moveLeft();
+	}
+</script> 
+
+<div id="titlepadding"></div>
+	<ul>
+	    <li>
+	        <h3>Created by :</h3>
+	        <h2>Marie Laporte</h2>
+	         <h2>Belynda Hamaz</h2>
+	          <h2>Richard Bunel</h2>
+	           <h2>Patrick Chen</h2>
+	           <h2>Romain Stasyszyn</h2>
+	           <h2>Ali Bouzeboudja</h2> 
+	           <h2>Karim Berkane</h2>
+                    <h2>Ramzi Ben Ammar</h2> 
+                    <h2>Fatah Adjabi</h2>
+                    <h2>Phillipe Said</h2>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>Team Boss</h3>
+	        <h2>Marie Laporte</h2>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>* Sub Group *</h3>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>DATA BASE MANAGEMENT </h3>
+	        <h2>Ali Bouzeboudja</h2>
+	        <h2>Fatah Adjabi</h2>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>LOG IN SYSTEM BASIC AUTH </h3>
+	        <h2>Richard Bunel</h2>
+	        <h2>Patrick Chen</h2>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>PARSING MPD</h3>
+	        <h2>Ramzi Ben Ammar</h2>
+	        <h2>Patrick Chen</h2>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>SEARCH FIELD</h3>
+	        <h2>Karim Berkane</h2>
+	        <h2>Romain Stasyszyn</h2>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>Integrator</h3>
+	        <h2>Karim Berkane</h2>
+	        <h2>Richard Bunel</h2>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>Link between HTML pages</h3>
+	        <h2>Marie Laporte</h2>
+	        
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>FRONT END (HTML BASIC DESIGN)+ MOCKUPS</h3>
+	       <h2>Marie Laporte</h2>
+	         <h2>Belynda Hamaz</h2>
+	          <h2>Richard Bunel</h2>
+	           <h2>Patrick Chen</h2>
+	           <h2>Romain Stasyszyn</h2>
+	           <h2>Ali Bouzeboudja</h2> 
+	           <h2>Karim Berkane</h2>
+                    <h2>Ramzi Ben Ammar</h2> 
+                    <h2>Fatah Adjabi</h2>
+                    <h2>Phillipe Said</h2>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>BACK END </h3>
+	        
+	          <h2>Richard Bunel</h2>
+	           <h2>Patrick Chen</h2>
+	          
+	           <h2>Ali Bouzeboudja</h2> 
+	          
+                    <h2>Ramzi Ben Ammar</h2> 
+                    <h2>Fatah Adjabi</h2>
+                    
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>UML DESIGN AND SUB SYSTEM</h3>
+	        <h2>Ali Bouzeboudja</h2> 
+	         <h2>Romain Stasyszyn</h2>
+            <br /><br/>
+	    </li>
+	    <li>
+	        <h3>DESIGN</h3>
+	        <h2>Marie Laporte</h2>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>Thanks</h3>
+	        <h2>Karim Tekkal</h2>
+	        <h2>Gustavo Petri</h2>
+	        
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3> </h3>
+            <br /><br />
+	    </li>
+	    <li>
+	        <h3>Ending credits</h3>
+	        <h2>Patrick Chen</h2>
+	        
+            <br /><br />
+	    </li>
+        <li id="copyright">
+        </li>
+	</ul>
+</div>
+
+   
+    <script>        
+        var body = document.getElementById("scrollingDiv");
+        body.style.top = window.innerHeight/2 +"px";
+        
+        var title = document.getElementById("centerTitle");
+        title.style.paddingTop = window.innerHeight/3 +"px";
+        
+        var copyright = document.getElementById("copyright");
+        copyright.style.paddingTop = window.innerHeight/3 +"px";
+        
+        var titlepadding = document.getElementById("titlepadding");
+        titlepadding.style.height = window.innerHeight +"px";
+        
+        var undertitle = document.getElementById("underTitle");
+        
+        var animate;
+        scroll();
+        
+        function scroll(){
+            if (parseInt(body.style.top) >= -parseInt(body.offsetHeight) )
+            {
+                body.style.top = parseInt(body.style.top) - 1 + 'px';
+                if ( Math.abs(parseInt(body.style.top)) <= 50) {
+                    var div = Math.abs(parseInt(body.style.top));
+                    var timeout = 1/div * 200;
+                    animate = setTimeout(function(){scroll();}, timeout);
+                } else {                    
+                    animate = setTimeout(function(){scroll();}, 16);
+                }
+            }
+            else{
+               // stop();
+               body.style.top = '0px';
+            undertitle.style.display = "block";
+            scroll();
+            }
+        }
+
+        function stop(){
+            clearTimeout(animate);
+            body.style.top = '0px';
+            undertitle.style.display = "block";
+        }
+    </script>
+    
+
+</body>
+</html>
